@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip to Taniti Island</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <h1>TANITI ISLAND</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="plan.html">Plan Your Trip</a></li>
+                <li><a href="info.html">Island Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="hero">
+            <h2>PLAN YOUR TRIP</h2>
+            <p>Your Taniti adventure starts here</p>
+        </section>
+
+        <section class="content">
+            <div class="content-block">
+                <div class="image-left">
+                    <img src="images/plan/accommodations.jpg" alt="Taniti Accommodations">
+                </div>
+                <div class="text-right">
+                    <h3>Accommodations</h3>
+                    <p>Taniti offers a wide range of lodging options to suit every preference and budget:</p>
+                    <ul>
+                        <li>Luxury resorts with full amenities</li>
+                        <li>Boutique hotels for a more intimate experience</li>
+                        <li>Family-owned bed and breakfasts</li>
+                        <li>Beach houses and private condos for longer stays</li>
+                        <li>Budget-friendly hostels for backpackers</li>
+                    </ul>
+                    <p>All accommodations are regularly inspected to ensure your comfort and safety.</p>
+                </div>
+            </div>
+
+            <div class="content-block reverse">
+                <div class="image-right">
+                    <img src="images/plan/transportation.jpg" alt="Taniti Transportation">
+                </div>
+                <div class="text-left">
+                    <h3>Getting Here and Around</h3>
+                    <p>Planning your journey to and around Taniti is easy:</p>
+                    <ul>
+                        <li>Fly into our local airport, which accommodates small jets and propeller planes</li>
+                        <li>Take a scenic cruise that docks weekly in Yellow Leaf Bay</li>
+                        <li>Use our efficient public bus system within Taniti City</li>
+                        <li>Rent a car, bike, or use taxis to explore the island</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-form">
+            <h2>Book Your Stay</h2>
+            <form action="submit-booking.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="arrival-date">Arrival Date:</label>
+                <input type="date" id="arrival-date" name="arrival-date" required>
+
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+
+                <label for="accommodation-type">Accommodation Type:</label>
+                <select id="accommodation-type" name="accommodation-type" required>
+                    <option value="">Select an option</option>
+                    <option value="resort">Resort</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="bb">Bed & Breakfast</option>
+                    <option value="condo">Private Condo</option>
+                    <option value="hostel">Hostel</option>
+                </select>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <label for="special-requests">Special Requests:</label>
+                <textarea id="special-requests" name="special-requests"></textarea>
+
+                <button type="submit">Submit Booking Request</button>
+            </form>
+        </section>
+
+        <section class="cta">
+            <h2>Need help planning your trip?</h2>
+            <p>Our travel experts are here to assist you in creating the perfect Taniti experience.</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="location">
+                <p>77 Taniti Island</p>
+                <p>Taniti, TN</p>
+            </div>
+            <div class="social-media">
+                <p>Connect with us</p>
+                <!-- Add social media icons/links here -->
+            </div>
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="plan.html">Plan Your Trip</a></li>
+                    <li><a href="info.html">Island Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
